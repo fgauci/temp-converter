@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Francesca Gauci">
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel=stylesheet href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <form>
+        <div class="form-row align-items-center">
+            <div class="form-group col-sm-6">
+                <label for="inputTemperature">Temperature</label>
+                <input oninput="conversion()" id="inputTemperature" type="number" class="form-control" value=0>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="inputTo">To</label>
+                <select onchange="conversion()" id="inputTo" class="form-control">
+                    <option value="°C" selected>Celsius</option>
+                    <option value="°F">Fahrenheit</option>
+                </select>
+            </div>
+        </div>
+    </form>
+    <div class="result" id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
